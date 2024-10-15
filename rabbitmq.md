@@ -22,7 +22,7 @@
    
    # 下载密钥
    wget https://binaries2.erlang-solutions.com/GPG-KEY-pmanager.asc
-   sudo apt-key add GPG-KEY-pmanager.as
+   sudo apt-key add GPG-KEY-pmanager.asc
    
    # 更新安装
    sudo apt-get update
@@ -30,9 +30,12 @@
    
    # 验证
    erl
-   ```
 
-2. 开启管理台插件
+   # TODO 如何查看erl的版本
+   ```
+   
+   
+3. 开启管理台插件
 
 ```shell
 ./rabbitmq-plugins list | grep rabbitmq_management

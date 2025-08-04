@@ -6,3 +6,4 @@
 3. [`redis`主从哨兵部署](redis.md)
 4. [`rabbitmq`集群部署](rabbitmq.md)
 5. [`ubuntu`个人设置](ubuntu.md)
+6. [`archlinux`虚拟机安装步骤](archlinux.md)

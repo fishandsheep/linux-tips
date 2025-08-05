@@ -124,3 +124,20 @@
     pacman -S fastfetch
     fastfetch
     ```
+### 5. 美化
+1. 字体
+   ```shell
+   # 安装Terminus字体
+   pacman -S terminus-font
+   # 查看可用的console字体
+   ls /usr/share/kbd/consolefonts
+   # 或者过滤一下结果
+   ls /usr/share/kbd/consolefonts | grep ter
+   # 临时修改
+   setfont ter-v24b
+   # 写入配置
+   vim /etc/vconsole.conf
+   FONT=ter-v24b
+   ```
+
+sudo systemctl start conie.service

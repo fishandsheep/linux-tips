@@ -78,6 +78,9 @@
     LANG=en_US.UTF-8 # 添加区域设置
     # 创建hostname
     /etc/hostname # 添加主机名
+
+    # 配置文件名字
+    passwd
     ```
 
 4. 安装引导程序

@@ -79,7 +79,7 @@
     # 创建hostname
     /etc/hostname # 添加主机名
 
-    # 配置文件名字
+    # 配置用户名
     passwd
     ```
 

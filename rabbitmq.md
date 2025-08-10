@@ -1,6 +1,6 @@
 # Ubuntu 集群部署 Rabbitmq
 
-1. 安装最新的版本，不用docker，不使用安装工具(yum)
+1. 安装最新的版本，尽量通用，不用docker，不使用安装工具(yum)
 
 2. 单机模拟集群
 
@@ -14,25 +14,17 @@
 
 ### 2. 安装
 
-1. 安装[Erlang](https://www.erlang-solutions.com/downloads/#)
+1. 安装`Erlang`
    
-   ```shell
-   # `/etc/apt/sources.list`目录下添加仓库
-   deb http://binaries2.erlang-solutions.com/ubuntu/ jammy-esl-erlang-26 contrib
-   
-   # 下载密钥
-   wget https://binaries2.erlang-solutions.com/GPG-KEY-pmanager.asc
-   sudo apt-key add GPG-KEY-pmanager.asc
-   
-   # 更新安装
-   sudo apt-get update
-   sudo apt-get install esl-erlang
-   
-   # 验证
-   erl
-
-   # TODO 如何查看erl的版本
-   ```
+```shell
+ # 使用homebrew安装
+ brew install erlang@27
+ # 使用源码安装 erlang
+ # 安装依赖
+libncurses5-dev libncursesw5-dev
+ # 下载包安装
+sudo ./configure && sudo make && sudo make install -j 8
+```
    
    
 3. 开启管理台插件

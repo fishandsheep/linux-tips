@@ -39,3 +39,30 @@
   # 配置 terminal 配置文件-文本-自定义字体-...
 
 ```
+
+
+### github ssh 无法push问题解决
+```shell
+# 测试22端口连接
+ssh -T -p 22 git@github.com
+
+# 测试443端口连接
+ssh -T -p 443 git@ssh.github.com
+
+# 在受限网络中，第一个命令会超时，第二个会成功。
+
+# 创建ssh配置文件
+mkdir -p ~/.ssh/config
+
+# 编辑config文件，添加以下内容
+Host github.com
+  Hostname ssh.github.com
+  Port 443
+  User git
+  # 添加超时设置
+  ConnectTimeout 10
+
+# 再次测试
+ssh -T git@ssh.github.com
+```
+

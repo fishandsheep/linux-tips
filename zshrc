@@ -1,0 +1,11 @@
+alias s="neofetch"
+alias cc="claude --dangerously-skip-permissions"
+alias co="opencode"
+alias lg="lazygit"
+alias lr="lazydocker"
+alias z="zellij"
+alias q="tgpt"
+alias qs="tgpt -s"
+alias c='tee >(clip.exe)'
+alias vh="vim ~/.zshrc"
+alias rh="source ~/.zshrc"

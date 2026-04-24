@@ -10,3 +10,6 @@
 
 ### 编程工具
 1. [`git command`](git-tips.md)
+
+### 通用配置
+1. [`zshrc`配置](zshrc.md)

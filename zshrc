@@ -9,3 +9,17 @@ alias qs="tgpt -s"
 alias c='tee >(clip.exe)'
 alias vh="vim ~/.zshrc"
 alias rh="source ~/.zshrc"
+
+# 20260428
+alias c='vim -'
+alias gu="gdu-go"
+
+
+
+
+------vim------
+source $VIMRUNTIME/defaults.vim
+
+set hls
+set clipboard=unnamedplus
+nnoremap Q :q!<CR>
